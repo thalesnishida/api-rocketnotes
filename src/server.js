@@ -11,9 +11,8 @@ const AppError = require("./utils/AppError");
 const uploadConfig = require("./configs/upload");
 
 const app = express();
-
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 migration();
 
